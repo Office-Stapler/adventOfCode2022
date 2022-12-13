@@ -36,7 +36,7 @@ POINTS_DICT = {
 }
 
 
-def calculate_points(opponent: int, user: Hand) -> int:
+def calculate_points(opponent: Hand, user: Hand) -> int:
     strategy_state = "LOSE"
     if opponent == user:
         strategy_state = "DRAW"
